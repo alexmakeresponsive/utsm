@@ -1,0 +1,17 @@
+{
+  "name": "utsm",
+  "version": "1.0.1",
+  "description": "copy files to target folder",
+  "main": "index.js",
+  "scripts": {
+	    
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alexandr Gorchakov",
+  "license": "ISC",
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "fsmonitor": "^0.2.4"
+  }
+}
