@@ -12,34 +12,33 @@
 1. Вы хотите импортировать модули следующим образом:
  
     	import someModule from @currentService/some/module 
-вместо:
 
-    	import someModule from ../../some/module
+    вместо:
+
+        import someModule from ../../some/module
 
 2. Вы хотите иметь общие модули для frontend и backend части и создаёте примерно такую файловую структуру
 
-		 		app--|
-					 |--common_modules--|
-					 |					|--common--|
-					 |					|		   |--src
-					 |					|
-					 |					|--node_modules--|
-					 |					                 |--@common
-					 |					                 |
-					 |						             |--utmc
-					 |--service_modules--|
-					 					 |--client--|
-					 					 |		    |--app_1
-					 					 |		    ..
-					 					 |		    |--app_n
-					 					 |		    
-					 					 |--server--|
-					 					 		    |--app_1
-					 					 		    ..
-					 					 		    |--app_n
-		
-
-		
+        app--|
+             |--common_modules--|
+             |                  |--common--|
+             |                  |          |--src
+             |                  |          
+             |                  |--node_modules--|
+             |                                   |--@common
+             |                                   |
+             |                                   |--utmc
+             |--service_modules--|
+                                 |--client--|
+                                 |          |--app_1
+                                 |          ..
+                                 |          |--app_n
+                                 |
+                                 |--server--|
+                                            |--app_1
+                                            ..
+                                            |--app_n
+      
     
 	где:
 
@@ -72,4 +71,3 @@
 
 1. Откройте **второй** терминал в `common_modules ` и выполните команду `tsc -p tsconfig.common.json -w` <br>
     tsc компилятор будет ожидать изменений файлов
-

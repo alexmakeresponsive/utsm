@@ -1,5 +1,9 @@
 # utsm node module
 
+## About
+
+Tool for manage TypeScript files
+
 ## Dependency
 
 * [colors](https://github.com/Marak/colors.js)
