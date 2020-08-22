@@ -12,35 +12,32 @@ Supposing you are a TypeScript Developer, you want to create a microservice web 
 1. You want to import modules like this:
  
     	import someModule from @currentService/some/module 
-instead:
+    instead:
 
-    	import someModule from ../../some/module
+        import someModule from ../../some/module
 
 2. You want to have common modules for the **frontend** and **backend** parts and create a file structure like this
 
-		 		app--|
-					 |--common_modules--|
-					 |					|--common--|
-					 |					|		   |--src
-					 |					|
-					 |					|--node_modules--|
-					 |					                 |--@common
-					 |					                 |
-					 |						             |--utmc
-					 |--service_modules--|
-					 					 |--client--|
-					 					 |		    |--app_1
-					 					 |		    ..
-					 					 |		    |--app_n
-					 					 |		    
-					 					 |--server--|
-					 					 		    |--app_1
-					 					 		    ..
-					 					 		    |--app_n
-		
+        app--|
+             |--common_modules--|
+             |                  |--common--|
+             |                  |          |--src
+             |                  |          
+             |                  |--node_modules--|
+             |                                   |--@common
+             |                                   |
+             |                                   |--utmc
+             |--service_modules--|
+                                 |--client--|
+                                 |          |--app_1
+                                 |          ..
+                                 |          |--app_n
+                                 |
+                                 |--server--|
+                                            |--app_1
+                                            ..
+                                            |--app_n
 
-		
-    
 	где:
 
 	* `app` - directory of your application
