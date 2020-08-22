@@ -1,15 +1,25 @@
 {
   "name": "utsm",
-  "version": "1.0.1",
-  "description": "copy files to target folder",
+  "version": "1.0.0",
+  "description": "copy files to target",
   "main": "index.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
   "scripts": {
-	    
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexmakeresponsive/utsm.git"
+  },
   "author": "Alexandr Gorchakov",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexmakeresponsive/utsm/issues"
+  },
+  "homepage": "https://github.com/alexmakeresponsive/utsm#readme",
   "devDependencies": {
     "colors": "^1.4.0",
     "fsmonitor": "^0.2.4"
